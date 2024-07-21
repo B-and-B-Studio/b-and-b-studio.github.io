@@ -12,12 +12,8 @@ class SidebarUtil {
     const iconClose = document.getElementById('icon-close');
     if (SidebarUtil.isExpanded === false) {
       document.body.setAttribute(ATTR_DISPLAY, '');
-      iconOpen.style.display = 'none';
-      iconClose.style.display = 'inline';
     } else {
       document.body.removeAttribute(ATTR_DISPLAY);
-      iconOpen.style.display = 'inline';
-      iconClose.style.display = 'none';
     }
 
     SidebarUtil.isExpanded = !SidebarUtil.isExpanded;
